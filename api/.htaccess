@@ -1,0 +1,8 @@
+# This is the blood and guts of our routing.
+# This will intercept any request and redirect it
+# to our root index.php file.
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteRule ^.*$ index.php [L]
+</IfModule>
